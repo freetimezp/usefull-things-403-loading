@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -10,11 +10,89 @@
 
     <body>
         <div class="loader">
-            Loading
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <!-- Background Effects -->
+            <div class="noise"></div>
+            <div class="grid"></div>
+
+            <!-- Floating Particles -->
+            <div class="particles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Main Loader -->
+            <div class="loader-box">
+                <!-- Top HUD -->
+                <div class="loader-top">
+                    <span>INITIALIZING</span>
+
+                    <div class="loader-status">
+                        <i></i>
+                        SYSTEM ONLINE
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="loader-content">
+                    <div class="loader-icon">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+
+                        <div class="core"></div>
+                    </div>
+
+                    <div class="loader-info">
+                        <div class="loading-text">
+                            LOADING<span class="dots"></span>
+                        </div>
+
+                        <div class="counter">
+                            <span id="progress">0</span>
+                            <small>%</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress -->
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>PROCESSING DATA</span>
+                        <span id="progressText">0%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Bottom HUD -->
+                <div class="loader-bottom">
+                    <span>SECURE CONNECTION</span>
+
+                    <div class="loader-lines">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <span>V.2026</span>
+                </div>
+            </div>
+
+            <!-- Corner Decorations -->
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
         </div>
 
         <script src="./assets/js/main.js"></script>
